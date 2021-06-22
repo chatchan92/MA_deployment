@@ -77,9 +77,12 @@ if(LOD_STAGE == 1):
         'FLOOR_HEIGHT',
         'GLAZED_AREA',
         'NUMBER_HABITABLE_ROOMS',
-        'WINDOWS_ENERGY_EFF',
-        'WALLS_ENERGY_EFF',
-        'ROOF_ENERGY_EFF',
+        # 'WINDOWS_ENERGY_EFF',
+        # 'WALLS_ENERGY_EFF',
+        # 'ROOF_ENERGY_EFF',
+        'WINDOWS_DESCRIPTION',
+        'WALLS_DESCRIPTION',
+        'ROOF_DESCRIPTION',
 
         # 'NUMBER_HEATED_ROOMS',
         # 'NUMBER_OPEN_FIREPLACES',
@@ -100,18 +103,18 @@ if(LOD_STAGE == 1):
         'BUILT_FORM': {'Detached': 0, 'Enclosed End-Terrace': 1, 'Enclosed Mid-Terrace': 2, 'End-Terrace': 3, 'Mid-Terrace': 4, 'Semi-Detached': 5}, 
         # 'MAINS_GAS_FLAG': {'N': 0, 'Y': 1}, 
         'GLAZED_AREA': {'Less Than Typical': 0, 'More Than Typical': 1, 'Much More Than Typical': 2, 'Normal': 3}, 
-        # 'SECONDHEAT_DESCRIPTION': {'None': 0, 'Portable electric heaters': 1, 'Room heaters,': 2, 'Room heaters, LPG': 3, 'Room heaters, anthracite': 4, 'Room heaters, bottled LPG': 5, 'Room heaters, bottled gas': 6, 'Room heaters, coal': 7, 'Room heaters, dual fuel (mineral and wood)': 8, 'Room heaters, electric': 9, 'Room heaters, mains gas': 10, 'Room heaters, oil': 11, 'Room heaters, smokeless fuel': 12, 'Room heaters, wood chips': 13, 'Room heaters, wood logs': 14}, 
-        # 'MAINHEAT_DESCRIPTION': {'Air source heat pump, radiators, electric': 0, 'Boiler and radiators, LPG': 1, 'Boiler and radiators, anthracite': 2, 'Boiler and radiators, bottled gas': 3, 'Boiler and radiators, coal': 4, 'Boiler and radiators, dual fuel (mineral and wood)': 5, 'Boiler and radiators, electric': 6, 'Boiler and radiators, mains gas': 7, 'Boiler and radiators, oil': 8, 'Boiler and radiators, smokeless fuel': 9, 'Boiler and radiators, wood logs': 10, 'Boiler and underfloor heating, LPG': 11, 'Boiler and underfloor heating, electric': 12, 'Boiler and underfloor heating, mains gas': 13, 'Boiler and underfloor heating, oil': 14, 'Community scheme': 15, 'Community scheme with CHP': 16, 'Community scheme, mains gas': 17, 'Community scheme, radiators, mains gas': 18, 'Community, community': 19, 'Electric ceiling heating': 20, 'Electric storage heaters': 21, 'Electric underfloor heating': 22, 'Ground source heat pump, radiators, electric': 23, 'Ground source heat pump, underfloor, electric': 24, 'No system present: electric heaters assumed': 25, 'Portable electric heaters assumed for most rooms': 26, 'Portable electric heating assumed for most rooms': 27, 'Room heaters, coal': 28, 'Room heaters, dual fuel (mineral and wood)': 29, 'Room heaters, electric': 30, 'Room heaters, mains gas': 31, 'Room heaters, smokeless fuel': 32, 'Room heaters, wood logs': 33, 'Warm air, Electricaire': 34, 'Warm air, electric': 35, 'Warm air, mains gas': 36}, 
+        # 'SECONDHEAT_DESCRIPTION': {'None': 0, 'Portable electric heaters': 1, 'Room heaters,': 2, 'Room heaters, LPG': 3, 'Room heaters, anthracite': 4, 'Room heaters, bottled LPG': 5, 'Room heaters, bottled gas': 6, 'Room heaters, coal': 7, 'Room heaters, dual fuel (mineral and wood)': 8, 'Room heaters, electric': 9, 'Room heaters, mains gas': 10, 'Room heaters, oil': 11, 'Room heaters, smokeless fuel': 12, 'Room heaters, wood logs': 13}
+        # 'MAINHEAT_DESCRIPTION': {'Boiler and radiators, LPG': 0, 'Boiler and radiators, anthracite': 1, 'Boiler and radiators, bottled gas': 2, 'Boiler and radiators, coal': 3, 'Boiler and radiators, dual fuel (mineral and wood)': 4, 'Boiler and radiators, electric': 5, 'Boiler and radiators, mains gas': 6, 'Boiler and radiators, oil': 7, 'Boiler and radiators, smokeless fuel': 8, 'Boiler and underfloor heating, LPG': 9, 'Boiler and underfloor heating, mains gas': 10, 'Boiler and underfloor heating, oil': 11, 'Community scheme': 12, 'Community scheme with CHP': 13, 'Electric ceiling heating': 14, 'Electric storage heaters': 15, 'Electric underfloor heating': 16, 'No system present: electric heating assumed': 17, 'Portable electric heating assumed for most rooms': 18, 'Room heaters, electric': 19, 'Room heaters, mains gas': 20, 'Room heaters, wood logs': 21, 'Warm air, Electricaire': 22, 'Warm air, electric': 23, 'Warm air, mains gas': 24}
         # 'SOLAR_WATER_HEATING_FLAG': {'N': 0, 'Y': 1}, 
         # 'MECHANICAL_VENTILATION': {'mechanical, extract only': 0, 'mechanical, supply and extract': 1, 'natural': 2}, 
         
         # 'FLAT_TOP_STOREY': {'N': 0, 'Y': 1}, 
         # 'HOTWATER_DESCRIPTION': {'Electric immersion, dual tariff': 0, 'Electric immersion, off-peak': 1, 'Electric immersion, off-peak, no cylinder thermostat': 2, 'Electric immersion, off-peak, no cylinderstat': 3, 'Electric immersion, off-peak, plus solar': 4, 'Electric immersion, standard tariff': 5, 'Electric instantaneous at point of use': 6, 'From main system': 7, 'From main system, no cylinder thermostat': 8, 'From main system, no cylinder thermostat, plus solar': 9, 'From main system, no cylinderstat': 10, 'From main system, plus solar': 11, 'From main system, standard tariff': 12, 'From secondary system': 13, 'From secondary system, no cylinder thermostat': 14, 'From secondary system, no cylinderstat': 15, 'Gas instantaneous at point of use': 16, 'Gas multipoint': 17, 'No system present: electric immersion assumed': 18}, 
-        # 'WINDOWS_DESCRIPTION': {'Full secondary glazing': 0, 'Fully double glazed': 1, 'Fully triple glazed': 2, 'Mostly double glazing': 3, 'Mostly secondary glazing': 4, 'Partial double glazing': 5, 'Partial secondary glazing': 6, 'Single glazed': 7, 'Some double glazing': 8, 'Some secondary glazing': 9}, 
-        # 'WALLS_DESCRIPTION': {'Cavity wall, as built, insulated (assumed)': 0, 'Cavity wall, as built, no insulation (assumed)': 1, 'Cavity wall, as built, partial insulation (assumed)': 2, 'Cavity wall, filled cavity': 3, 'Cavity wall, insulated (assumed)': 4, 'Cavity wall, no insulation (assumed)': 5, 'Cavity wall, with external insulation': 6, 'Cavity wall, with internal insulation': 7, 'Cob, as built': 8, 'Granite or whin, as built, insulated (assumed)': 9, 'Granite or whin, as built, no insulation (assumed)': 10, 'Granite or whin, with external insulation': 11, 'Granite or whin, with internal insulation': 12, 'Granite or whinstone, as built, insulated (assumed)': 13, 'Granite or whinstone, as built, no insulation (assumed)': 14, 'Granite or whinstone, with internal insulation': 15, 'Sandstone, as built, insulated (assumed)': 16, 'Sandstone, as built, no insulation (assumed)': 17, 'Sandstone, as built, partial insulation (assumed)': 18, 'Sandstone, with internal insulation': 19, 'Solid brick, as built, insulated (assumed)': 20, 'Solid brick, as built, no insulation (assumed)': 21, 'Solid brick, as built, partial insulation (assumed)': 22, 'Solid brick, with external insulation': 23, 'Solid brick, with internal insulation': 24, 'System built, as built, insulated (assumed)': 25, 'System built, as built, no insulation (assumed)': 26, 'System built, as built, partial insulation (assumed)': 27, 'System built, with external insulation': 28, 'System built, with internal insulation': 29, 'Timber frame, as built, insulated (assumed)': 30, 'Timber frame, as built, no insulation (assumed)': 31, 'Timber frame, as built, partial insulation (assumed)': 32, 'Timber frame, with internal insulation': 33}, 
+        'WINDOWS_DESCRIPTION': {'Fully double glazing': 0, 'Fully triple glazing': 1, 'Mostly double glazing': 2, 'Partial double glazing': 3, 'Single glazing': 4},
+        'WALLS_DESCRIPTION': {'Cavity wall, as built, insulated': 0, 'Cavity wall, as built, no insulation': 1, 'Cavity wall, as built, partial insulation': 2, 'Cavity wall, filled cavity': 3, 'Cavity wall, with external insulation': 4, 'Cavity wall, with internal insulation': 5, 'Cob, as built': 6, 'Granite or whinstone, as built, insulated': 7, 'Granite or whinstone, as built, no insulation': 8, 'Granite or whinstone, with external insulation': 9, 'Granite or whinstone, with internal insulation': 10, 'Sandstone, as built, insulated': 11, 'Sandstone, as built, no insulation': 12, 'Sandstone, with internal insulation': 13, 'Solid brick, as built, insulated': 14, 'Solid brick, as built, no insulation': 15, 'Solid brick, as built, partial insulation': 16, 'Solid brick, with external insulation': 17, 'Solid brick, with internal insulation': 18, 'System built, as built, insulated': 19, 'System built, as built, no insulation': 20, 'System built, as built, partial insulation': 21, 'System built, with external insulation': 22, 'System built, with internal insulation': 23, 'Timber frame, as built, insulated': 24, 'Timber frame, as built, no insulation': 25, 'Timber frame, as built, partial insulation': 26, 'Timber frame, with internal insulation': 27},
         # 'FLOOR_DESCRIPTION': {'(other premises below)': 0, 'Solid, insulated': 1, 'Solid, insulated (assumed)': 2, 'Solid, limited insulation (assumed)': 3, 'Solid, no insulation (assumed)': 4, 'Suspended, insulated': 5, 'Suspended, insulated (assumed)': 6, 'Suspended, limited insulation (assumed)': 7, 'Suspended, no insulation (assumed)': 8, 'To external air, insulated': 9, 'To external air, insulated (assumed)': 10, 'To external air, limited insulation (assumed)': 11, 'To external air, no insulation (assumed)': 12, 'To external air, uninsulated (assumed)': 13, 'To unheated space, insulated': 14, 'To unheated space, insulated (assumed)': 15, 'To unheated space, limited insulation (assumed)': 16, 'To unheated space, no insulation (assumed)': 17, 'To unheated space, uninsulated (assumed)': 18}, 
         # 'MAINHEATCONT_DESCRIPTION': {'Appliance thermostats': 0, 'Automatic charge control': 1, 'Charging system linked to the use of community heating prog and TRVs': 2, 'Charging system linked to use of community heating programmer and TRVs': 3, 'Flat rate charging no thermostat control of room temperature': 4, 'Flat rate charging no thermostatic control': 5, 'Flat rate charging no thermostatic control of room temperature': 6, 'Flat rate charging programmer and TRVs': 7, 'Flat rate charging programmer and room thermostat': 8, 'Flat rate charging programmer no room thermostat': 9, 'Flat rate charging room thermostat only': 10, 'Manual charge control': 11, 'No thermostatic control of room temperature': 12, 'No time or thermostatic control of room temp': 13, 'No time or thermostatic control of room temperature': 14, 'None': 15, 'Programmer TRVs and boiler energy manager': 16, 'Programmer TRVs and bypass': 17, 'Programmer and appliance thermostats': 18, 'Programmer and at least 2 room thermostats': 19, 'Programmer and at least two room thermostats': 20, 'Programmer and room thermostat': 21, 'Programmer and room thermostats': 22, 'Programmer no room thermostat': 23, 'Programmer room thermostat and TRVs': 24, 'Room thermostat only': 25, 'Room thermostats only': 26, 'Temperature zone control': 27, 'Time and temperature zone control': 28, 'Unit charging programmer and TRVs': 29}, 
-        # 'ROOF_DESCRIPTION': {'Flat': 0, 'Flat insulated': 1, 'Flat insulated (assumed)': 2, 'Flat limited insulation': 3, 'Flat limited insulation (assumed)': 4, 'Flat no insulation': 5, 'Flat no insulation (assumed)': 6, 'Pitched': 7, 'Pitched 0mm loft insulation': 8, 'Pitched 100mm loft insulation': 9, 'Pitched 12mm loft insulation': 10, 'Pitched 150mm loft insulation': 11, 'Pitched 200mm loft insulation': 12, 'Pitched 250mm loft insulation': 13, 'Pitched 25mm loft insulation': 14, 'Pitched 270mm loft insulation': 15, 'Pitched 300+mm loft insulation': 16, 'Pitched 300mm loft insulation': 17, 'Pitched 50mm loft insulation': 18, 'Pitched 75mm loft insulation': 19, 'Pitched Unknown loft insulation': 20, 'Pitched insulated (assumed)': 21, 'Pitched insulated at rafters': 22, 'Pitched limited insulation (assumed)': 23, 'Pitched no insulation': 24, 'Pitched no insulation (assumed)': 25, 'Roof room(s) ceiling insulated': 26, 'Roof room(s) insulated': 27, 'Roof room(s) insulated (assumed)': 28, 'Roof room(s) limited insulation (assumed)': 29, 'Roof room(s) no insulation': 30, 'Roof room(s) no insulation (assumed)': 31, 'Roof room(s) thatched': 32, 'Roof room(s) thatched with additional insulation': 33, 'Thatched': 34, 'Thatched with additional insulation': 35}, 
+        'ROOF_DESCRIPTION': {'Flat': 0, 'Flat insulated': 1, 'Flat limited insulation': 2, 'Pitched': 3, 'Pitched 100mm loft insulation': 4, 'Pitched 12mm loft insulation': 5, 'Pitched 150mm loft insulation': 6, 'Pitched 200mm loft insulation': 7, 'Pitched 250mm loft insulation': 8, 'Pitched 25mm loft insulation': 9, 'Pitched 270mm loft insulation': 10, 'Pitched 300+mm loft insulation': 11, 'Pitched 300mm loft insulation': 12, 'Pitched 50mm loft insulation': 13, 'Pitched 75mm loft insulation': 14, 'Pitched insulated': 15, 'Pitched insulated at rafters': 16, 'Pitched limited insulation': 17, 'Roof room(s) ceiling insulated': 18, 'Roof room(s) insulated': 19, 'Roof room(s) limited insulation': 20, 'Roof room(s) no insulation': 21, 'Roof room(s) thatched': 22, 'Roof room(s) thatched with additional insulation': 23, 'Thatched': 24, 'Thatched with additional insulation': 25},
         # 'PROPERTY_TYPE': {'Bungalow': 0, 'Flat': 1, 'House': 2, 'Maisonette': 3}, 
         # 'ENERGY_TARIFF': {'Single': 0, 'Unknown': 1, 'dual': 2}, 
         # 'GLAZED_TYPE': {'double glazing installed before 2002': 0, 'double glazing installed during or after 2002': 1, 'double glazing, unknown install date': 2, 'not defined': 3, 'secondary glazing': 4, 'single glazing': 5, 'triple glazing': 6}, 
@@ -120,12 +123,12 @@ if(LOD_STAGE == 1):
     rate_dict = {
         # 'HOT_WATER_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'HOT_WATER_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'WINDOWS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'WINDOWS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'WALLS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'WALLS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'ROOF_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'ROOF_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'WINDOWS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'WINDOWS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'WALLS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'WALLS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'ROOF_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'ROOF_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'MAINHEAT_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'MAINHEAT_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'MAINHEATC_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
@@ -142,36 +145,54 @@ elif(LOD_STAGE == 2):
         'FLOOR_HEIGHT',
         'GLAZED_AREA',
         'NUMBER_HABITABLE_ROOMS',
-        'WINDOWS_ENERGY_EFF',
-        'WALLS_ENERGY_EFF',
-        'ROOF_ENERGY_EFF',
+        # 'WINDOWS_ENERGY_EFF',
+        # 'WALLS_ENERGY_EFF',
+        # 'ROOF_ENERGY_EFF',
+        'WINDOWS_DESCRIPTION',
+        'WALLS_DESCRIPTION',
+        'ROOF_DESCRIPTION',
 
         'NUMBER_HEATED_ROOMS',
         'NUMBER_OPEN_FIREPLACES',
         'MULTI_GLAZE_PROPORTION',
         'MAINHEAT_DESCRIPTION',
-        'MAINHEAT_ENERGY_EFF',
+        # 'MAINHEAT_ENERGY_EFF',
 
      ]
 
     cat_dict = {
 
         'BUILT_FORM': {'Detached': 0, 'Enclosed End-Terrace': 1, 'Enclosed Mid-Terrace': 2, 'End-Terrace': 3, 'Mid-Terrace': 4, 'Semi-Detached': 5}, 
+        # 'MAINS_GAS_FLAG': {'N': 0, 'Y': 1}, 
         'GLAZED_AREA': {'Less Than Typical': 0, 'More Than Typical': 1, 'Much More Than Typical': 2, 'Normal': 3}, 
-        'MAINHEAT_DESCRIPTION': {'Air source heat pump, radiators, electric': 0, 'Boiler and radiators, LPG': 1, 'Boiler and radiators, anthracite': 2, 'Boiler and radiators, bottled gas': 3, 'Boiler and radiators, coal': 4, 'Boiler and radiators, dual fuel (mineral and wood)': 5, 'Boiler and radiators, electric': 6, 'Boiler and radiators, mains gas': 7, 'Boiler and radiators, oil': 8, 'Boiler and radiators, smokeless fuel': 9, 'Boiler and radiators, wood logs': 10, 'Boiler and underfloor heating, LPG': 11, 'Boiler and underfloor heating, electric': 12, 'Boiler and underfloor heating, mains gas': 13, 'Boiler and underfloor heating, oil': 14, 'Community scheme': 15, 'Community scheme with CHP': 16, 'Community scheme, mains gas': 17, 'Community scheme, radiators, mains gas': 18, 'Community, community': 19, 'Electric ceiling heating': 20, 'Electric storage heaters': 21, 'Electric underfloor heating': 22, 'Ground source heat pump, radiators, electric': 23, 'Ground source heat pump, underfloor, electric': 24, 'No system present: electric heaters assumed': 25, 'Portable electric heaters assumed for most rooms': 26, 'Portable electric heating assumed for most rooms': 27, 'Room heaters, coal': 28, 'Room heaters, dual fuel (mineral and wood)': 29, 'Room heaters, electric': 30, 'Room heaters, mains gas': 31, 'Room heaters, smokeless fuel': 32, 'Room heaters, wood logs': 33, 'Warm air, Electricaire': 34, 'Warm air, electric': 35, 'Warm air, mains gas': 36}, 
-     
+        # 'SECONDHEAT_DESCRIPTION': {'None': 0, 'Portable electric heaters': 1, 'Room heaters,': 2, 'Room heaters, LPG': 3, 'Room heaters, anthracite': 4, 'Room heaters, bottled LPG': 5, 'Room heaters, bottled gas': 6, 'Room heaters, coal': 7, 'Room heaters, dual fuel (mineral and wood)': 8, 'Room heaters, electric': 9, 'Room heaters, mains gas': 10, 'Room heaters, oil': 11, 'Room heaters, smokeless fuel': 12, 'Room heaters, wood logs': 13}
+        'MAINHEAT_DESCRIPTION': {'Boiler and radiators, LPG': 0, 'Boiler and radiators, anthracite': 1, 'Boiler and radiators, bottled gas': 2, 'Boiler and radiators, coal': 3, 'Boiler and radiators, dual fuel (mineral and wood)': 4, 'Boiler and radiators, electric': 5, 'Boiler and radiators, mains gas': 6, 'Boiler and radiators, oil': 7, 'Boiler and radiators, smokeless fuel': 8, 'Boiler and underfloor heating, LPG': 9, 'Boiler and underfloor heating, mains gas': 10, 'Boiler and underfloor heating, oil': 11, 'Community scheme': 12, 'Community scheme with CHP': 13, 'Electric ceiling heating': 14, 'Electric storage heaters': 15, 'Electric underfloor heating': 16, 'No system present: electric heating assumed': 17, 'Portable electric heating assumed for most rooms': 18, 'Room heaters, electric': 19, 'Room heaters, mains gas': 20, 'Room heaters, wood logs': 21, 'Warm air, Electricaire': 22, 'Warm air, electric': 23, 'Warm air, mains gas': 24},
+        # 'SOLAR_WATER_HEATING_FLAG': {'N': 0, 'Y': 1}, 
+        # 'MECHANICAL_VENTILATION': {'mechanical, extract only': 0, 'mechanical, supply and extract': 1, 'natural': 2}, 
+        
+        # 'FLAT_TOP_STOREY': {'N': 0, 'Y': 1}, 
+        # 'HOTWATER_DESCRIPTION': {'Electric immersion, dual tariff': 0, 'Electric immersion, off-peak': 1, 'Electric immersion, off-peak, no cylinder thermostat': 2, 'Electric immersion, off-peak, no cylinderstat': 3, 'Electric immersion, off-peak, plus solar': 4, 'Electric immersion, standard tariff': 5, 'Electric instantaneous at point of use': 6, 'From main system': 7, 'From main system, no cylinder thermostat': 8, 'From main system, no cylinder thermostat, plus solar': 9, 'From main system, no cylinderstat': 10, 'From main system, plus solar': 11, 'From main system, standard tariff': 12, 'From secondary system': 13, 'From secondary system, no cylinder thermostat': 14, 'From secondary system, no cylinderstat': 15, 'Gas instantaneous at point of use': 16, 'Gas multipoint': 17, 'No system present: electric immersion assumed': 18}, 
+        'WINDOWS_DESCRIPTION': {'Fully double glazing': 0, 'Fully triple glazing': 1, 'Mostly double glazing': 2, 'Partial double glazing': 3, 'Single glazing': 4},
+        'WALLS_DESCRIPTION': {'Cavity wall, as built, insulated': 0, 'Cavity wall, as built, no insulation': 1, 'Cavity wall, as built, partial insulation': 2, 'Cavity wall, filled cavity': 3, 'Cavity wall, with external insulation': 4, 'Cavity wall, with internal insulation': 5, 'Cob, as built': 6, 'Granite or whinstone, as built, insulated': 7, 'Granite or whinstone, as built, no insulation': 8, 'Granite or whinstone, with external insulation': 9, 'Granite or whinstone, with internal insulation': 10, 'Sandstone, as built, insulated': 11, 'Sandstone, as built, no insulation': 12, 'Sandstone, with internal insulation': 13, 'Solid brick, as built, insulated': 14, 'Solid brick, as built, no insulation': 15, 'Solid brick, as built, partial insulation': 16, 'Solid brick, with external insulation': 17, 'Solid brick, with internal insulation': 18, 'System built, as built, insulated': 19, 'System built, as built, no insulation': 20, 'System built, as built, partial insulation': 21, 'System built, with external insulation': 22, 'System built, with internal insulation': 23, 'Timber frame, as built, insulated': 24, 'Timber frame, as built, no insulation': 25, 'Timber frame, as built, partial insulation': 26, 'Timber frame, with internal insulation': 27},
+        # 'FLOOR_DESCRIPTION': {'(other premises below)': 0, 'Solid, insulated': 1, 'Solid, insulated (assumed)': 2, 'Solid, limited insulation (assumed)': 3, 'Solid, no insulation (assumed)': 4, 'Suspended, insulated': 5, 'Suspended, insulated (assumed)': 6, 'Suspended, limited insulation (assumed)': 7, 'Suspended, no insulation (assumed)': 8, 'To external air, insulated': 9, 'To external air, insulated (assumed)': 10, 'To external air, limited insulation (assumed)': 11, 'To external air, no insulation (assumed)': 12, 'To external air, uninsulated (assumed)': 13, 'To unheated space, insulated': 14, 'To unheated space, insulated (assumed)': 15, 'To unheated space, limited insulation (assumed)': 16, 'To unheated space, no insulation (assumed)': 17, 'To unheated space, uninsulated (assumed)': 18}, 
+        # 'MAINHEATCONT_DESCRIPTION': {'Appliance thermostats': 0, 'Automatic charge control': 1, 'Charging system linked to the use of community heating prog and TRVs': 2, 'Charging system linked to use of community heating programmer and TRVs': 3, 'Flat rate charging no thermostat control of room temperature': 4, 'Flat rate charging no thermostatic control': 5, 'Flat rate charging no thermostatic control of room temperature': 6, 'Flat rate charging programmer and TRVs': 7, 'Flat rate charging programmer and room thermostat': 8, 'Flat rate charging programmer no room thermostat': 9, 'Flat rate charging room thermostat only': 10, 'Manual charge control': 11, 'No thermostatic control of room temperature': 12, 'No time or thermostatic control of room temp': 13, 'No time or thermostatic control of room temperature': 14, 'None': 15, 'Programmer TRVs and boiler energy manager': 16, 'Programmer TRVs and bypass': 17, 'Programmer and appliance thermostats': 18, 'Programmer and at least 2 room thermostats': 19, 'Programmer and at least two room thermostats': 20, 'Programmer and room thermostat': 21, 'Programmer and room thermostats': 22, 'Programmer no room thermostat': 23, 'Programmer room thermostat and TRVs': 24, 'Room thermostat only': 25, 'Room thermostats only': 26, 'Temperature zone control': 27, 'Time and temperature zone control': 28, 'Unit charging programmer and TRVs': 29}, 
+        'ROOF_DESCRIPTION': {'Flat': 0, 'Flat insulated': 1, 'Flat limited insulation': 2, 'Pitched': 3, 'Pitched 100mm loft insulation': 4, 'Pitched 12mm loft insulation': 5, 'Pitched 150mm loft insulation': 6, 'Pitched 200mm loft insulation': 7, 'Pitched 250mm loft insulation': 8, 'Pitched 25mm loft insulation': 9, 'Pitched 270mm loft insulation': 10, 'Pitched 300+mm loft insulation': 11, 'Pitched 300mm loft insulation': 12, 'Pitched 50mm loft insulation': 13, 'Pitched 75mm loft insulation': 14, 'Pitched insulated': 15, 'Pitched insulated at rafters': 16, 'Pitched limited insulation': 17, 'Roof room(s) ceiling insulated': 18, 'Roof room(s) insulated': 19, 'Roof room(s) limited insulation': 20, 'Roof room(s) no insulation': 21, 'Roof room(s) thatched': 22, 'Roof room(s) thatched with additional insulation': 23, 'Thatched': 24, 'Thatched with additional insulation': 25},
+        # 'PROPERTY_TYPE': {'Bungalow': 0, 'Flat': 1, 'House': 2, 'Maisonette': 3}, 
+        # 'ENERGY_TARIFF': {'Single': 0, 'Unknown': 1, 'dual': 2}, 
+        # 'GLAZED_TYPE': {'double glazing installed before 2002': 0, 'double glazing installed during or after 2002': 1, 'double glazing, unknown install date': 2, 'not defined': 3, 'secondary glazing': 4, 'single glazing': 5, 'triple glazing': 6}, 
+         
 }
 
     rate_dict = {
         # 'HOT_WATER_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'HOT_WATER_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'WINDOWS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'WINDOWS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'WALLS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'WALLS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'ROOF_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'ROOF_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'MAINHEAT_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'WINDOWS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'WINDOWS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'WALLS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'WALLS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'ROOF_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'ROOF_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'MAINHEAT_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'MAINHEAT_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'MAINHEATC_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'MAINHEATC_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
@@ -187,56 +208,60 @@ elif(LOD_STAGE == 3):
         'FLOOR_HEIGHT',
         'GLAZED_AREA',
         'NUMBER_HABITABLE_ROOMS',
-        'WINDOWS_ENERGY_EFF',
-        'WALLS_ENERGY_EFF',
-        'ROOF_ENERGY_EFF',
+        # 'WINDOWS_ENERGY_EFF',
+        # 'WALLS_ENERGY_EFF',
+        # 'ROOF_ENERGY_EFF',
+        'WINDOWS_DESCRIPTION',
+        'WALLS_DESCRIPTION',
+        'ROOF_DESCRIPTION',
 
         'NUMBER_HEATED_ROOMS',
         'NUMBER_OPEN_FIREPLACES',
         'MULTI_GLAZE_PROPORTION',
         'MAINHEAT_DESCRIPTION',
-        'MAINHEAT_ENERGY_EFF',
+        # 'MAINHEAT_ENERGY_EFF',
 
         'SECONDHEAT_DESCRIPTION',
         'MECHANICAL_VENTILATION',
         'MAINS_GAS_FLAG',
         'SOLAR_WATER_HEATING_FLAG',
-        'HOT_WATER_ENERGY_EFF',
+        # 'HOT_WATER_ENERGY_EFF',
         'PHOTO_SUPPLY',
      ]
 
     cat_dict = {
 
+
         'BUILT_FORM': {'Detached': 0, 'Enclosed End-Terrace': 1, 'Enclosed Mid-Terrace': 2, 'End-Terrace': 3, 'Mid-Terrace': 4, 'Semi-Detached': 5}, 
         'MAINS_GAS_FLAG': {'N': 0, 'Y': 1}, 
         'GLAZED_AREA': {'Less Than Typical': 0, 'More Than Typical': 1, 'Much More Than Typical': 2, 'Normal': 3}, 
-        'SECONDHEAT_DESCRIPTION': {'None': 0, 'Portable electric heaters': 1, 'Room heaters,': 2, 'Room heaters, LPG': 3, 'Room heaters, anthracite': 4, 'Room heaters, bottled LPG': 5, 'Room heaters, bottled gas': 6, 'Room heaters, coal': 7, 'Room heaters, dual fuel (mineral and wood)': 8, 'Room heaters, electric': 9, 'Room heaters, mains gas': 10, 'Room heaters, oil': 11, 'Room heaters, smokeless fuel': 12, 'Room heaters, wood chips': 13, 'Room heaters, wood logs': 14}, 
-        'MAINHEAT_DESCRIPTION': {'Air source heat pump, radiators, electric': 0, 'Boiler and radiators, LPG': 1, 'Boiler and radiators, anthracite': 2, 'Boiler and radiators, bottled gas': 3, 'Boiler and radiators, coal': 4, 'Boiler and radiators, dual fuel (mineral and wood)': 5, 'Boiler and radiators, electric': 6, 'Boiler and radiators, mains gas': 7, 'Boiler and radiators, oil': 8, 'Boiler and radiators, smokeless fuel': 9, 'Boiler and radiators, wood logs': 10, 'Boiler and underfloor heating, LPG': 11, 'Boiler and underfloor heating, electric': 12, 'Boiler and underfloor heating, mains gas': 13, 'Boiler and underfloor heating, oil': 14, 'Community scheme': 15, 'Community scheme with CHP': 16, 'Community scheme, mains gas': 17, 'Community scheme, radiators, mains gas': 18, 'Community, community': 19, 'Electric ceiling heating': 20, 'Electric storage heaters': 21, 'Electric underfloor heating': 22, 'Ground source heat pump, radiators, electric': 23, 'Ground source heat pump, underfloor, electric': 24, 'No system present: electric heaters assumed': 25, 'Portable electric heaters assumed for most rooms': 26, 'Portable electric heating assumed for most rooms': 27, 'Room heaters, coal': 28, 'Room heaters, dual fuel (mineral and wood)': 29, 'Room heaters, electric': 30, 'Room heaters, mains gas': 31, 'Room heaters, smokeless fuel': 32, 'Room heaters, wood logs': 33, 'Warm air, Electricaire': 34, 'Warm air, electric': 35, 'Warm air, mains gas': 36}, 
+        'SECONDHEAT_DESCRIPTION': {'None': 0, 'Portable electric heaters': 1, 'Room heaters,': 2, 'Room heaters, LPG': 3, 'Room heaters, anthracite': 4, 'Room heaters, bottled LPG': 5, 'Room heaters, bottled gas': 6, 'Room heaters, coal': 7, 'Room heaters, dual fuel (mineral and wood)': 8, 'Room heaters, electric': 9, 'Room heaters, mains gas': 10, 'Room heaters, oil': 11, 'Room heaters, smokeless fuel': 12, 'Room heaters, wood logs': 13},
+        'MAINHEAT_DESCRIPTION': {'Boiler and radiators, LPG': 0, 'Boiler and radiators, anthracite': 1, 'Boiler and radiators, bottled gas': 2, 'Boiler and radiators, coal': 3, 'Boiler and radiators, dual fuel (mineral and wood)': 4, 'Boiler and radiators, electric': 5, 'Boiler and radiators, mains gas': 6, 'Boiler and radiators, oil': 7, 'Boiler and radiators, smokeless fuel': 8, 'Boiler and underfloor heating, LPG': 9, 'Boiler and underfloor heating, mains gas': 10, 'Boiler and underfloor heating, oil': 11, 'Community scheme': 12, 'Community scheme with CHP': 13, 'Electric ceiling heating': 14, 'Electric storage heaters': 15, 'Electric underfloor heating': 16, 'No system present: electric heating assumed': 17, 'Portable electric heating assumed for most rooms': 18, 'Room heaters, electric': 19, 'Room heaters, mains gas': 20, 'Room heaters, wood logs': 21, 'Warm air, Electricaire': 22, 'Warm air, electric': 23, 'Warm air, mains gas': 24},
         'SOLAR_WATER_HEATING_FLAG': {'N': 0, 'Y': 1}, 
         'MECHANICAL_VENTILATION': {'mechanical, extract only': 0, 'mechanical, supply and extract': 1, 'natural': 2}, 
         
         # 'FLAT_TOP_STOREY': {'N': 0, 'Y': 1}, 
         # 'HOTWATER_DESCRIPTION': {'Electric immersion, dual tariff': 0, 'Electric immersion, off-peak': 1, 'Electric immersion, off-peak, no cylinder thermostat': 2, 'Electric immersion, off-peak, no cylinderstat': 3, 'Electric immersion, off-peak, plus solar': 4, 'Electric immersion, standard tariff': 5, 'Electric instantaneous at point of use': 6, 'From main system': 7, 'From main system, no cylinder thermostat': 8, 'From main system, no cylinder thermostat, plus solar': 9, 'From main system, no cylinderstat': 10, 'From main system, plus solar': 11, 'From main system, standard tariff': 12, 'From secondary system': 13, 'From secondary system, no cylinder thermostat': 14, 'From secondary system, no cylinderstat': 15, 'Gas instantaneous at point of use': 16, 'Gas multipoint': 17, 'No system present: electric immersion assumed': 18}, 
-        # 'WINDOWS_DESCRIPTION': {'Full secondary glazing': 0, 'Fully double glazed': 1, 'Fully triple glazed': 2, 'Mostly double glazing': 3, 'Mostly secondary glazing': 4, 'Partial double glazing': 5, 'Partial secondary glazing': 6, 'Single glazed': 7, 'Some double glazing': 8, 'Some secondary glazing': 9}, 
-        # 'WALLS_DESCRIPTION': {'Cavity wall, as built, insulated (assumed)': 0, 'Cavity wall, as built, no insulation (assumed)': 1, 'Cavity wall, as built, partial insulation (assumed)': 2, 'Cavity wall, filled cavity': 3, 'Cavity wall, insulated (assumed)': 4, 'Cavity wall, no insulation (assumed)': 5, 'Cavity wall, with external insulation': 6, 'Cavity wall, with internal insulation': 7, 'Cob, as built': 8, 'Granite or whin, as built, insulated (assumed)': 9, 'Granite or whin, as built, no insulation (assumed)': 10, 'Granite or whin, with external insulation': 11, 'Granite or whin, with internal insulation': 12, 'Granite or whinstone, as built, insulated (assumed)': 13, 'Granite or whinstone, as built, no insulation (assumed)': 14, 'Granite or whinstone, with internal insulation': 15, 'Sandstone, as built, insulated (assumed)': 16, 'Sandstone, as built, no insulation (assumed)': 17, 'Sandstone, as built, partial insulation (assumed)': 18, 'Sandstone, with internal insulation': 19, 'Solid brick, as built, insulated (assumed)': 20, 'Solid brick, as built, no insulation (assumed)': 21, 'Solid brick, as built, partial insulation (assumed)': 22, 'Solid brick, with external insulation': 23, 'Solid brick, with internal insulation': 24, 'System built, as built, insulated (assumed)': 25, 'System built, as built, no insulation (assumed)': 26, 'System built, as built, partial insulation (assumed)': 27, 'System built, with external insulation': 28, 'System built, with internal insulation': 29, 'Timber frame, as built, insulated (assumed)': 30, 'Timber frame, as built, no insulation (assumed)': 31, 'Timber frame, as built, partial insulation (assumed)': 32, 'Timber frame, with internal insulation': 33}, 
+        'WINDOWS_DESCRIPTION': {'Fully double glazing': 0, 'Fully triple glazing': 1, 'Mostly double glazing': 2, 'Partial double glazing': 3, 'Single glazing': 4},
+        'WALLS_DESCRIPTION': {'Cavity wall, as built, insulated': 0, 'Cavity wall, as built, no insulation': 1, 'Cavity wall, as built, partial insulation': 2, 'Cavity wall, filled cavity': 3, 'Cavity wall, with external insulation': 4, 'Cavity wall, with internal insulation': 5, 'Cob, as built': 6, 'Granite or whinstone, as built, insulated': 7, 'Granite or whinstone, as built, no insulation': 8, 'Granite or whinstone, with external insulation': 9, 'Granite or whinstone, with internal insulation': 10, 'Sandstone, as built, insulated': 11, 'Sandstone, as built, no insulation': 12, 'Sandstone, with internal insulation': 13, 'Solid brick, as built, insulated': 14, 'Solid brick, as built, no insulation': 15, 'Solid brick, as built, partial insulation': 16, 'Solid brick, with external insulation': 17, 'Solid brick, with internal insulation': 18, 'System built, as built, insulated': 19, 'System built, as built, no insulation': 20, 'System built, as built, partial insulation': 21, 'System built, with external insulation': 22, 'System built, with internal insulation': 23, 'Timber frame, as built, insulated': 24, 'Timber frame, as built, no insulation': 25, 'Timber frame, as built, partial insulation': 26, 'Timber frame, with internal insulation': 27},
         # 'FLOOR_DESCRIPTION': {'(other premises below)': 0, 'Solid, insulated': 1, 'Solid, insulated (assumed)': 2, 'Solid, limited insulation (assumed)': 3, 'Solid, no insulation (assumed)': 4, 'Suspended, insulated': 5, 'Suspended, insulated (assumed)': 6, 'Suspended, limited insulation (assumed)': 7, 'Suspended, no insulation (assumed)': 8, 'To external air, insulated': 9, 'To external air, insulated (assumed)': 10, 'To external air, limited insulation (assumed)': 11, 'To external air, no insulation (assumed)': 12, 'To external air, uninsulated (assumed)': 13, 'To unheated space, insulated': 14, 'To unheated space, insulated (assumed)': 15, 'To unheated space, limited insulation (assumed)': 16, 'To unheated space, no insulation (assumed)': 17, 'To unheated space, uninsulated (assumed)': 18}, 
         # 'MAINHEATCONT_DESCRIPTION': {'Appliance thermostats': 0, 'Automatic charge control': 1, 'Charging system linked to the use of community heating prog and TRVs': 2, 'Charging system linked to use of community heating programmer and TRVs': 3, 'Flat rate charging no thermostat control of room temperature': 4, 'Flat rate charging no thermostatic control': 5, 'Flat rate charging no thermostatic control of room temperature': 6, 'Flat rate charging programmer and TRVs': 7, 'Flat rate charging programmer and room thermostat': 8, 'Flat rate charging programmer no room thermostat': 9, 'Flat rate charging room thermostat only': 10, 'Manual charge control': 11, 'No thermostatic control of room temperature': 12, 'No time or thermostatic control of room temp': 13, 'No time or thermostatic control of room temperature': 14, 'None': 15, 'Programmer TRVs and boiler energy manager': 16, 'Programmer TRVs and bypass': 17, 'Programmer and appliance thermostats': 18, 'Programmer and at least 2 room thermostats': 19, 'Programmer and at least two room thermostats': 20, 'Programmer and room thermostat': 21, 'Programmer and room thermostats': 22, 'Programmer no room thermostat': 23, 'Programmer room thermostat and TRVs': 24, 'Room thermostat only': 25, 'Room thermostats only': 26, 'Temperature zone control': 27, 'Time and temperature zone control': 28, 'Unit charging programmer and TRVs': 29}, 
-        # 'ROOF_DESCRIPTION': {'Flat': 0, 'Flat insulated': 1, 'Flat insulated (assumed)': 2, 'Flat limited insulation': 3, 'Flat limited insulation (assumed)': 4, 'Flat no insulation': 5, 'Flat no insulation (assumed)': 6, 'Pitched': 7, 'Pitched 0mm loft insulation': 8, 'Pitched 100mm loft insulation': 9, 'Pitched 12mm loft insulation': 10, 'Pitched 150mm loft insulation': 11, 'Pitched 200mm loft insulation': 12, 'Pitched 250mm loft insulation': 13, 'Pitched 25mm loft insulation': 14, 'Pitched 270mm loft insulation': 15, 'Pitched 300+mm loft insulation': 16, 'Pitched 300mm loft insulation': 17, 'Pitched 50mm loft insulation': 18, 'Pitched 75mm loft insulation': 19, 'Pitched Unknown loft insulation': 20, 'Pitched insulated (assumed)': 21, 'Pitched insulated at rafters': 22, 'Pitched limited insulation (assumed)': 23, 'Pitched no insulation': 24, 'Pitched no insulation (assumed)': 25, 'Roof room(s) ceiling insulated': 26, 'Roof room(s) insulated': 27, 'Roof room(s) insulated (assumed)': 28, 'Roof room(s) limited insulation (assumed)': 29, 'Roof room(s) no insulation': 30, 'Roof room(s) no insulation (assumed)': 31, 'Roof room(s) thatched': 32, 'Roof room(s) thatched with additional insulation': 33, 'Thatched': 34, 'Thatched with additional insulation': 35}, 
+        'ROOF_DESCRIPTION': {'Flat': 0, 'Flat insulated': 1, 'Flat limited insulation': 2, 'Pitched': 3, 'Pitched 100mm loft insulation': 4, 'Pitched 12mm loft insulation': 5, 'Pitched 150mm loft insulation': 6, 'Pitched 200mm loft insulation': 7, 'Pitched 250mm loft insulation': 8, 'Pitched 25mm loft insulation': 9, 'Pitched 270mm loft insulation': 10, 'Pitched 300+mm loft insulation': 11, 'Pitched 300mm loft insulation': 12, 'Pitched 50mm loft insulation': 13, 'Pitched 75mm loft insulation': 14, 'Pitched insulated': 15, 'Pitched insulated at rafters': 16, 'Pitched limited insulation': 17, 'Roof room(s) ceiling insulated': 18, 'Roof room(s) insulated': 19, 'Roof room(s) limited insulation': 20, 'Roof room(s) no insulation': 21, 'Roof room(s) thatched': 22, 'Roof room(s) thatched with additional insulation': 23, 'Thatched': 24, 'Thatched with additional insulation': 25},
         # 'PROPERTY_TYPE': {'Bungalow': 0, 'Flat': 1, 'House': 2, 'Maisonette': 3}, 
         # 'ENERGY_TARIFF': {'Single': 0, 'Unknown': 1, 'dual': 2}, 
         # 'GLAZED_TYPE': {'double glazing installed before 2002': 0, 'double glazing installed during or after 2002': 1, 'double glazing, unknown install date': 2, 'not defined': 3, 'secondary glazing': 4, 'single glazing': 5, 'triple glazing': 6}, 
     }
 
     rate_dict = {
-        'HOT_WATER_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'HOT_WATER_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'WINDOWS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'WINDOWS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'WALLS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'WALLS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'ROOF_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        # 'ROOF_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
-        'MAINHEAT_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'HOT_WATER_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'HOT_WATER_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'WINDOWS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'WINDOWS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'WALLS_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'WALLS_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'ROOF_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # # 'ROOF_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
+        # 'MAINHEAT_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'MAINHEAT_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'MAINHEATC_ENERGY_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
         # 'MAINHEATC_ENV_EFF' : {'Very good': 5, 'Good': 4, 'Averaged': 3, 'Poor': 2, 'Very poor': 1},
@@ -251,23 +276,26 @@ LOD_1_L = [
         'FLOOR_HEIGHT',
         'GLAZED_AREA',
         'NUMBER_HABITABLE_ROOMS',
-        'WINDOWS_ENERGY_EFF',
-        'WALLS_ENERGY_EFF',
-        'ROOF_ENERGY_EFF',
+        # 'WINDOWS_ENERGY_EFF',
+        # 'WALLS_ENERGY_EFF',
+        # 'ROOF_ENERGY_EFF',
+        'WINDOWS_DESCRIPTION',
+        'WALLS_DESCRIPTION',
+        'ROOF_DESCRIPTION',
      ]
 LOD_2_L = [
         'NUMBER_HEATED_ROOMS',
         'NUMBER_OPEN_FIREPLACES',
         'MULTI_GLAZE_PROPORTION',
         'MAINHEAT_DESCRIPTION',
-        'MAINHEAT_ENERGY_EFF',
+        # 'MAINHEAT_ENERGY_EFF',
      ]
 LOD_3_L = [
         'SECONDHEAT_DESCRIPTION',
         'MECHANICAL_VENTILATION',
         'MAINS_GAS_FLAG',
         'SOLAR_WATER_HEATING_FLAG',
-        'HOT_WATER_ENERGY_EFF',
+        # 'HOT_WATER_ENERGY_EFF',
         'PHOTO_SUPPLY',
      ]
 
@@ -314,7 +342,7 @@ def user_input_features(cat_dict, rate_dict, status_dict):
     if(status_dict['TOTAL_FLOOR_AREA'] is True):
         TOTAL_FLOOR_AREA = st.sidebar.slider(
             'TOTAL_FLOOR_AREA',
-            0.1, 1000.0, (50.0)
+            0.1, 500.0, (50.0)
         )
         out_float_dict['TOTAL_FLOOR_AREA'] = TOTAL_FLOOR_AREA
     
@@ -402,9 +430,9 @@ def load_model(LOD_STAGE):
     # ngb_CO2 = joblib.load('ngb_model_ALL_DATA_2020-10-22_12-02-05_v1_LCA.pkl')
     with gzip.open('D_'+str(LOD_STAGE)+'_ENERGY_CONSUMPTION_CURRENT_PER_M2.pklz', 'rb') as ifp:
         ngb_CURR = pickle.load(ifp)
-    with gzip.open('D_'+str(LOD_STAGE)+'_CO2_EMISSIONS_CURRENT_PER_M2.pklz', 'rb') as ifp:
+    with gzip.open('D_'+str(LOD_STAGE)+'_CO2_EMISS_CURR_PER_FLOOR_AREA.pklz', 'rb') as ifp:
         ngb_CO2 = pickle.load(ifp)
-    with gzip.open('D_'+str(LOD_STAGE)+'_COST_OPE_PER_M2.pklz', 'rb') as ifp:
+    with gzip.open('D_'+str(LOD_STAGE)+'_COST_OPE_CURRENT_PER_M2.pklz', 'rb') as ifp:
         ngb_COST = pickle.load(ifp)
     # st.write("""
     #         Model loaded! 
@@ -442,7 +470,7 @@ def point_prediction(SUBJECT, model, mu_list, sigma_list, y_dists, input_f):
 
     # x = np.linspace(mu_1-5*sigma_1,mu_1+5*sigma_1,1000)
     if(SUBJECT == 'Energy (kWh/m²·year)'):
-        x = np.linspace(0, max(p_mean+5, 25), 1000)
+        x = np.linspace(0, max(p_mean+5, 15), 1000)
     elif(SUBJECT == 'CO2 (kg/m²·year)'):
         x = np.linspace(10, max(p_mean+5, 85), 1000)
     elif(SUBJECT == 'Cost (£/m²·year)'):   
@@ -470,14 +498,6 @@ def point_prediction(SUBJECT, model, mu_list, sigma_list, y_dists, input_f):
                            'importance':feature_importance_loc}).sort_values('importance',ascending=False)
     df_scale = pd.DataFrame({'feature':input_col, 
                            'importance':feature_importance_scale}).sort_values('importance',ascending=False)
-    fig_imp, (ax1, ax2) = plt.subplots(2, 1, figsize=(6,13))
-    fig_imp.subplots_adjust(wspace = 0.8)
-    fig_imp.suptitle("Feature importance plot for distribution parameters", fontsize=17)
-
-    plt.tight_layout()
-    sns.barplot(x='importance',y='feature',ax=ax1,data=df_loc, color="skyblue").set_title('loc param')
-    sns.barplot(x='importance',y='feature',ax=ax2,data=df_scale, color="skyblue").set_title('scale param')
-    
 
     ############## presentation
     st.write(y_dists.params.items())
@@ -496,22 +516,44 @@ def point_prediction(SUBJECT, model, mu_list, sigma_list, y_dists, input_f):
     with st.beta_expander(SUBJECT + '\'s detail'):
         # possibility distribution
         # st.pyplot(fig)
-        # feature importance
+        st.write('---')
+        # waterfall
+        st.write('Waterfall plot:')
+        fig_w, ax = plt.subplots(figsize=(6,13)) 
         plt.tight_layout()
-        st.pyplot(fig_imp)
+        # shap_w = shap_transform_scale(explainer(input_f), p_mean, 0)
+        # p_w = shap.plots.waterfall(shap_w)
+        shap.plots._waterfall.waterfall_legacy(expected_value[0], shap_values[0], feature_names=input_f.columns)
+        st.pyplot(fig_w)
 
         # decsion plot
+        st.write('---')
+        st.write('Decsion plot:')
         fig_d, ax = plt.subplots(figsize=(6,13)) 
         plt.tight_layout()
         shap_d = shap.decision_plot(expected_value, shap_values, input_f.columns,feature_order='hclust', return_objects=True)
         st.pyplot(fig_d)
+
+        # feature importance
+        st.write('---')
+        st.write('Feature importance plot:')
+        fig_imp, (ax1, ax2) = plt.subplots(2, 1, figsize=(6,13))
+        fig_imp.subplots_adjust(wspace = 0.8)
+        # fig_imp.suptitle("Feature importance plot for distribution parameters", fontsize=17)
+        plt.tight_layout()
+        sns.barplot(x='importance',y='feature',ax=ax1,data=df_loc, color="skyblue").set_title('loc param')
+        sns.barplot(x='importance',y='feature',ax=ax2,data=df_scale, color="skyblue").set_title('scale param')
+        st.pyplot(fig_imp)
 
         # 记录shap贡献值，做成dataframe
         shap_df = pd.DataFrame(shap_d.shap_values)
         shap_df.columns = shap_d.feature_names
         st.write(shap_df)
 
+
+# explain the model again
     return shap_df
+
 
 
 def estimation(model, SUBJECT, input_f, cat_dict, warning=False, TOTAL_LIST=TOTAL_LIST):
@@ -536,7 +578,7 @@ def estimation(model, SUBJECT, input_f, cat_dict, warning=False, TOTAL_LIST=TOTA
             # 剩下的
             else:
                 if(each_col == 'TOTAL_FLOOR_AREA'):
-                    permutation_list.append(list(np.linspace(0.1, 1000, 200, endpoint=True)))
+                    permutation_list.append(list(np.linspace(0.1, 500, 100, endpoint=True)))
                 if(each_col == 'FLOOR_HEIGHT'):
                     permutation_list.append(list(np.linspace(0.1, 20, 40, endpoint=True)))
                 if(each_col == 'MULTI_GLAZE_PROPORTION'):
@@ -550,7 +592,7 @@ def estimation(model, SUBJECT, input_f, cat_dict, warning=False, TOTAL_LIST=TOTA
                 if(each_col == 'WIND_TURBINE_COUNT'):
                     permutation_list.append([0,1])
                 if(each_col == 'PHOTO_SUPPLY'):
-                    permutation_list.append([0,1])
+                    permutation_list.append(list(np.linspace(0, 100, 101, endpoint=True)))
     # calculate permutation length 计算需要遍历的个数
     length = 1
     for each_len in permutation_list:
@@ -579,8 +621,8 @@ def estimation(model, SUBJECT, input_f, cat_dict, warning=False, TOTAL_LIST=TOTA
         target_permutation_df = target_permutation_df[input_f.columns.values.tolist()]
 
         # down_sampling
-        if(len(target_permutation_df)>=1500):
-            target_permutation_df = target_permutation_df.sample(1500)
+        if(len(target_permutation_df)>=500):
+            target_permutation_df = target_permutation_df.sample(500)
         
         # estimation model
         # st.write(target_permutation_df)
@@ -605,7 +647,7 @@ def estimation(model, SUBJECT, input_f, cat_dict, warning=False, TOTAL_LIST=TOTA
             else:
                 mix = mix + a1/len(mu_list)
             # 细线
-            if(len(target_permutation_df)<=500):
+            if(len(target_permutation_df)<=100):
                 if(each_p == 0):
                     plt.plot(x, a1, color='bisque',linewidth=0.5, linestyle="-", label='Probability of a single prediction')
                 if(each_p % 5 == 0):
@@ -696,9 +738,10 @@ def estimation(model, SUBJECT, input_f, cat_dict, warning=False, TOTAL_LIST=TOTA
         shap_values = explainer.shap_values(target_permutation_df)
         shap_s = shap.summary_plot(shap_values, target_permutation_df, feature_names=input_f.columns.values.tolist(), max_display=33)
         
+        # SHAP 值表格，命名columns
         shap_df = pd.DataFrame(shap_values)
         shap_df.columns = input_f.columns
-        st.write(shap_df)
+        # st.write(shap_df)
         # shap.plots.heatmap(explainer(target_permutation_df))
         # if our unknown cols in reverse_cat_cols 
         cat_input_cols = []
@@ -712,20 +755,81 @@ def estimation(model, SUBJECT, input_f, cat_dict, warning=False, TOTAL_LIST=TOTA
         # st.write(X_cat.shape)
         with st.beta_expander('Feature contributions:'):
             st.set_option('deprecation.showPyplotGlobalUse', False)
+            # SHOW SUMMARY PLOT
             st.pyplot(fig_i)
+            # st.write(shap_df)
+            df_estimation = pd.DataFrame()
             if(cat_input_cols != []):
                 X_cat = target_permutation_df.copy()
                 # decoding feature back to string
                 for each_col in cat_input_cols:
                     X_cat[each_col] = X_cat[each_col].map(reverse_cat_dict[each_col])
+                    # get each row's feature name
+                    each_sample_df = X_cat[[each_col]]
+                    each_sample_df = each_sample_df.reset_index()
+                    # get shap value
+                    each_sample_df[each_col+'_Impact'] = shap_df[each_col]
+                    # st.write(each_sample_df)
+                    # df_estimation = pd.concat([df_estimation, each_sample_df],ignore_index=True)
+                    df_estimation[each_col] = each_sample_df[each_col]
+                    df_estimation[each_col+'_Impact'] = each_sample_df[each_col+'_Impact']
 
-                    fig, ax = plt.subplots()
-                    plt.rc('xtick', labelsize=8)
-                    plt.rc('axes', titlesize=8) 
-                    fig = shap.dependence_plot(each_col, shap_values, X_cat, interaction_index=None)
-                    plt.xticks(rotation=45, ha="right", size=8)
-                    plt.tight_layout()
-                    st.pyplot(fig)
+                    
+
+            df_impact = df_estimation.loc[:,['Impact' in i for i in df_estimation.columns]]
+            for i in df_impact.columns:
+                # category plot
+                fig, ax = plt.subplots()
+                plt.rc('xtick', labelsize=8)
+                plt.rc('axes', titlesize=8)
+                fig = shap.dependence_plot(i[:-7], shap_values, X_cat, interaction_index=None)
+                plt.xticks(rotation=45, ha="right", size=8)
+                plt.tight_layout()
+                st.pyplot(fig)
+
+                st.write(df_estimation[[i[:-7],i]].groupby(i[:-7]).mean())    
+                # 记录shap贡献值，做成dataframe
+                # st.write(reverse_cat_dict[each_col].values())
+                # 去除非重复项
+                # sampled_df = X_cat.loc[:, (X_cat != X_cat.iloc[0]).any()]
+                # st.write(sampled_df)
+
+                # 各个选项的潜在影响
+                
+                # st.write(df_estimation.loc[:,['Impact' in i for i in df_estimation.columns]].sum(axis=1))
+        with st.beta_expander('Suggestions:'):
+            # st.write('---')
+            st.write('At the current design scheme:')
+
+            for i in df_impact.columns:
+                text = 'By setting **{}** --> **{}** would maximize the prediction around **{}** at the following potential scenario'.format(i[:-7], df_estimation.iloc[df_impact[i].idxmax()][i[:-7]], str(round(df_estimation.iloc[df_impact[i].idxmax()][i], 2)) )
+                st.markdown(text)
+                st.write(df_estimation.loc[df_impact[i].idxmax()])
+            st.markdown('-')
+            for i in df_impact.columns:
+                text = 'By setting **{}** --> **{}** would minimize the prediction around **{}** at the following potential scenario'.format(i[:-7], df_estimation.iloc[df_impact[i].idxmin()][i[:-7]], str(round(df_estimation.iloc[df_impact[i].idxmin()][i], 2)) )
+                st.markdown(text)
+                st.write(df_estimation.loc[df_impact[i].idxmin()])
+
+                # st.write()
+                # st.write('To minimze the ')
+                # st.write(i[:-7])
+                # st.write(round(df_estimation.iloc[df_impact[i].idxmin()][i]))
+                # st.write(df_estimation.iloc[df_impact[i].idxmin()][i[:-7]])
+            # st.write(df_estimation.loc[df_estimation['Value'].idxmax()])
+            df_estimation['Overall_Impact'] = df_estimation.loc[:,['Impact' in i for i in df_estimation.columns]].sum(axis=1)
+            st.write('---')
+            st.write('Overall estimation detail:')
+            st.write(df_estimation)
+
+                # shap_df = pd.DataFrame(shap_values)
+                # shap_df.columns = X_cat.columns
+                # shap_df = shap_df[[sampled_df.columns.values()]]
+                # shap_df.columns = ['Impact']
+                # shap_df[each_col] = reverse_cat_dict[each_col].values()
+                # shap_df.sort_values('Impact', inplace=True)
+                
+                
 
 
 
@@ -758,7 +862,7 @@ def open_model_box(model, SUBJECT, input_f, go_point_prediction=True):
 df = pd.read_csv('D'+str(LOD_STAGE)+'.csv', index_col=0)
 # input dataframe
 input_f = df.iloc[0:1]
-
+# st.write(input_f)
 # input data updating
 out_cat_dict, out_rate_dict, out_float_dict = user_input_features(cat_dict, rate_dict, status_dict)
 
