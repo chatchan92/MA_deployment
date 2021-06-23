@@ -2,7 +2,7 @@
 import streamlit as st
 import datetime 
 # import talib 
-import ta
+# import ta
 import pandas as pd
 import numpy as np
 import os, sys, gc, time, warnings, random, joblib, gzip, pickle
